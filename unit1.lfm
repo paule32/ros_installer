@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 253
+  Height = 298
+  Top = 153
+  Width = 374
+  Caption = 'Form1'
+  ClientHeight = 279
+  ClientWidth = 374
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 20
+    Top = 259
+    Width = 374
+    Panels = <>
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 200
+    Top = 40
+    Width = 312
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      ClientHeight = 174
+      ClientWidth = 304
+      object TreeView1: TTreeView
+        Left = 0
+        Height = 169
+        Top = 0
+        Width = 121
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Settings'
+      ClientHeight = 174
+      ClientWidth = 304
+      object DBNavigator1: TDBNavigator
+        Left = 8
+        Height = 25
+        Top = 0
+        Width = 241
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 25
+        ClientWidth = 241
+        Options = []
+        TabOrder = 0
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 374
+    Caption = 'ToolBar1'
+    TabOrder = 2
+    object BitBtn1: TBitBtn
+      Left = 1
+      Height = 22
+      Top = 2
+      Width = 75
+      Caption = 'BitBtn1'
+      TabOrder = 0
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 111
+    top = 60
+    object MenuItem1: TMenuItem
+      Caption = 'File'
+      OnClick = MenuItem1Click
+      object MenuItem2: TMenuItem
+        Caption = 'Exit'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+  object DataSource1: TDataSource
+    left = 46
+    top = 108
+  end
+  object Dbf1: TDbf
+    IndexDefs = <>
+    TableLevel = 4
+    FilterOptions = []
+    left = 144
+    top = 118
+  end
+end
